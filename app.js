@@ -469,6 +469,12 @@
 // document.write("<br>" +total + " "+ob+" "+per +"%");
 
 
+
+                // Chapter 9-11
+
+
+
+
 // Q1. Write a program to take “city” name as input from user. If
 // user enters “Karachi”, welcome the user like this:
 // “Welcome to city of lights”
@@ -516,6 +522,337 @@
 
 // Answer
 
-var inp=prompt("Input remaining fuel in car (in litres)");
-if(inp<0.25)
-document.write("Please refill the fuel in your car");
+// var inp=prompt("Input remaining fuel in car (in litres)");
+// if(inp<0.25)
+// document.write("Please refill the fuel in your car");
+
+
+// Q5. Run this script, & check whether alert message would be
+// displayed or not. Record the outputs.
+// a.
+//  var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
+// OUTPUT: given condition for variable a is true
+// b.
+//  var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }
+// Output : Nothing will show in the Output
+
+// c.
+//  var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// }
+// Output : condition 2 is true
+        // condition 4 is true
+
+
+// d. 
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }
+// Output : The cost equals
+
+//e.
+//  if (true){
+// alert("True");
+// }
+// if (false){
+// alert("False");
+// }
+// Output : True
+
+
+// f.
+//  if("car" < "cat"){
+//     alert("car is smaller than cat");
+//     }
+
+// Output: car is smaller than cat
+// this is because each character has asci value 'r' has lesser number ASCI value than 't' this is because 'r' comes before 't' that's why car is lesser than cat
+
+
+// Q6. Write a program to take input the marks obtained in three
+// subjects & total marks. Compute & show the resulting
+// percentage on your page. 
+
+
+// var sub1=+prompt("Enter 1st Subject Marks out of 100");
+// var sub2=+prompt("Enter 2nd Subject Marks out of 100");
+// var sub3=+prompt("Enter 3rd Subject Marks out of 100");
+// var total =300;
+// var  obt=sub1+sub2+sub3;
+// var perc=(obt/total)*100;
+// var grade;
+// var remarks;
+// if (perc>=80)
+// {
+//          grade="A+";
+//          remarks="Excellent";
+// }
+// else if (perc>=70 && perc<80){
+//         grade="A";
+//         remarks="Good";
+ 
+// }
+// else if (perc>=60 && perc<70)
+// {
+//     grade="B";
+//     remarks="You need to improve";
+   
+// }
+// else 
+// {
+//     grade ="Fail";
+//     remarks="Sorry";
+  
+// }
+// document.write("Total Marks:  "+total);
+// document.write("<br>Marks Obtained "+obt);
+// document.write("<br>Percentage: "+perc+"%");
+// document.write("<br>Grade : "+grade );
+// document.write("<br>Remarks: "+remarks);
+
+// Q7. Guess game:
+// Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number.
+// a. If user guesses the same number, show “Bingo! Correct
+// answer”.
+// b. If the guessed number +1 is the secret number, show
+// “Close enough to the correct answer”.
+
+// var secNumber=7;
+// var guess=+prompt("Enter a number (range 1 to 10) to check whether the number is matched or not with secret number " );
+// if (guess===secNumber)
+// {
+//     document.write("Bingo! Correct  answer");
+
+
+// }
+// else if(guess+1===secNumber)
+// {
+//     document.write("Close enough to the correct answer");
+// }
+// else {
+//     document.write("Not Matched");
+// }
+
+
+// Q8. Write a program to check whether the given number is
+// divisible by 3. Show the message to the user if the number
+// is divisible by 3.
+
+// var num=prompt("Enter a number to check whether the number is divisible by 3 or not");
+// document.write("Given number is 78");
+// if(num%3==0)
+// {
+//     document.write("<br>Number is divisible by 3");
+// }
+// else {
+//     document.write("<br>Number is not divisible by 3");
+// }
+
+
+// Q9. Write a program that checks whether the given input is an
+// even number or an odd number.
+
+// var number=+prompt("Enter a number");
+// if (number%2===0)
+// {
+//     document.write("Number is even");
+
+// }
+// else 
+// document.write("Number is odd");
+
+
+// Q10. Write a program that takes temperature as input and
+// shows a message based on following criteria
+// a. T > 40 then “It is too hot outside.”
+// b. T > 30 then “The Weather today is Normal.”
+// c. T > 20 then “Today’s Weather is cool.”
+// d. T > 10 then “OMG! Today’s weather is so Cool.”
+
+// var t=prompt("Enter tempreture");
+// if(t>40)
+// {
+//     document.write("It is too hot outside.");
+// }
+// else if(t>30)
+// {
+//     document.write("The Weather today is Normal.");
+// }
+// else if(t>20)
+// {
+//     document.write("Today’s Weather is cool.");
+
+// }
+// else if (t>10)
+// {
+//     document.write("OMG! Today’s weather is so Cool.");
+// }
+
+
+// Q11. Write a program to create a calculator for +,-,*, / & %
+// using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
+
+// var num1=+prompt("Enter 1st Number: ");
+// var num2=+prompt("Enter 2nd Number: ");
+// var op=prompt("Enter Operator: ");
+// var result;
+// if(op==="+"){
+// result=num1+num2;
+
+//     document.write("Addition of "+num1+" and "+num2+"i s "+result);
+// }
+// else if(op==="-")
+// {
+//     result=num1-num2;
+//     document.write("<br>Subtraction of "+num1+" by "+num2+" is "+result);
+// }
+// else if(op==="*")
+// {
+//     result=num1*num2;
+//     document.write("Multipication of "+num1+" and "+" is "+result);
+
+// }
+// else if(op==="/")
+// {
+//     result=num1/num2;
+//     document.write("Division of "+num1+" by "+num2+" is "+result);
+
+// }
+// else if(op==="%")
+// {
+//     result=num1%num2;
+//     document.write("Remainder  is "+result);
+
+// }
+// else
+// document.write("<br>Invalid Operator");
+
+
+                    // chapter 12-13
+
+
+// Q1. Write a program that takes a character (number or string)
+// in a variable & checks whether the given input is a
+// number, uppercase letter or lower case letter. (Hint: ASCII
+// codes:- A=65, Z=90, a=97, z=122)
+
+// var char=prompt("Enter a character: ");
+// if(char >=65 && char<=90 )
+// document.write("Character is UpperCase Letter");
+// else if(char >=97 && char <=122)
+// document.write("Character is lower case Letter");
+// else if (char>='48' && char<='57')
+// document.write("Character is a digit");
+
+// Q2. Write a JavaScript program that accept two integers and
+// display the larger. Also show if the two integers are equal.
+
+// var int1=+prompt("Enter 1st integer");
+// var int2=+prompt("Enter 2nd integer");
+
+// if(int1===int2)
+// {
+//     document.write("Both integers are equal");
+// }
+// else if (int1>int2)
+// {
+//     document.write(int1+" is greater than "+int2);
+
+// }
+// else {
+
+//     document.write(int2+" is greater than "+int1);
+// }
+
+// Q3. Write a program that takes input a number from user &
+// state whether the number is positive, negative or zero.
+
+// var inp=+prompt("Enter a number: ");
+// if(inp >0)
+// {
+//     document.write("Number is Positive");
+
+// }
+// else if (inp==0)
+// {
+//     document.write("Number is 0");
+// }
+// else document.write("Number is Negative");
+
+
+// Q4. Write a program that takes a character (i.e. string of
+//     length 1) and returns true if it is a vowel, false otherwise
+    
+// var c=prompt("Enter a character");
+// if (c =="a" || c=="e" || c=="i" ||  c=="o" ||  c=="u")
+// document.write("True");
+// else 
+// document.write("False");
+
+// Q5. Write a program that
+// a. Store correct password in a JS variable.
+// b. Asks user to enter his/her password
+// c. Validate the two passwords:
+// i. Check if user has entered password. If not, then
+// give message “ Please enter your password”
+// ii. Check if both passwords are same. If they are
+// same, show message “Correct! The password you
+// entered matches the original password”. Show
+// “Incorrect password” otherwise.
+
+// var corPass=123456789;
+// var inpPass=+prompt("Enter your Password");
+// if(corPass===inpPass){
+//     document.write("Correct");
+// }
+// else
+// document.write("Wrong");
+
+
+// Q6. This if/else statement does not work. Try to fix it:
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";
+// }
+// else
+// greeting = "Good evening";
+
+// Q7. Write a program that takes time as input from user in 24
+// hours clock format like: 1900 = 7pm. Implement the
+// following case using if, else & else if statements
+
+// var time=+prompt("Enter time (in 24 hours clock format like: 19:00)");
+// if(time>=0000 && time<1200)
+// document.write("Good Morning");
+
+// else if(time>=1200 && time<1700)
+// document.write("Good Afternoon");
+// else if(time>=1700 && time<2100)
+// document.write("Good Evening");
+// else if(time>=2100 && time<=2400)
+// document.write("Good Night");
