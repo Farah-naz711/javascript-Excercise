@@ -11,7 +11,8 @@
 // alert("Happy Coding!\nPrevent this page from creating additional dialogs");
 // Question5
 // alert("Hello.... I can run JS through web browser's console")
-// Question 6 Panding
+// Question 6
+// Question 7
 
                     // Chapter two
 // Q1. Declare a variable called username
@@ -760,13 +761,13 @@
 // number, uppercase letter or lower case letter. (Hint: ASCII
 // codes:- A=65, Z=90, a=97, z=122)
 
-// var char=prompt("Enter a character: ");
-// if(char >=65 && char<=90 )
-// document.write("Character is UpperCase Letter");
-// else if(char >=97 && char <=122)
-// document.write("Character is lower case Letter");
-// else if (char>='48' && char<='57')
-// document.write("Character is a digit");
+//var char=prompt("Enter a character: ");
+//if(char.charCodeAt()>=65 && char.charCodeAt()<=90 )
+//document.write("Character is UpperCase Letter");
+//else if(char.charCodeAt() >=97 && char.charCodeAt() <=122)
+//document.write("Character is lower case Letter");
+//else if (char.charCodeAt()>='48' && char.charCodeAt()<='57')
+//document.write("Character is a digit");
 
 // Q2. Write a JavaScript program that accept two integers and
 // display the larger. Also show if the two integers are equal.
@@ -824,13 +825,21 @@
 // entered matches the original password”. Show
 // “Incorrect password” otherwise.
 
-// var corPass=123456789;
-// var inpPass=+prompt("Enter your Password");
-// if(corPass===inpPass){
-//     document.write("Correct");
+// var corPass="123fara01";
+// var inpPass=prompt("Enter your Password");
+// if(!inpPass){
+//     document.write("Please Entere your Password");
 // }
-// else
-// document.write("Wrong");
+// else if(corPass===inpPass)
+// {
+// document.write("Correct");
+
+// }
+// else 
+// {
+//         document.write("Wrong");
+// }
+
 
 
 // Q6. This if/else statement does not work. Try to fix it:
